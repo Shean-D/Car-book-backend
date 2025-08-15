@@ -34,6 +34,7 @@ public class CarEntity {
     @Column(name = "daily_rate", nullable = false, precision = 10, scale = 2)
     private Double dailyRate;
 
+    @Enumerated(EnumType.STRING)
     @Column(name = "status", nullable = false)
     private CarStatus status = CarStatus.AVAILABLE;
 
