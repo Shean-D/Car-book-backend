@@ -24,7 +24,7 @@ public class PaymentEntity {
     @JoinColumn(name = "booking_id", nullable = false, foreignKey = @ForeignKey(name = "fk_payment_booking"))
     private BookingEntity bookingId;
 
-    @Column(name = "amount", nullable = false, precision = 10, scale = 2)
+    @Column(name = "amount", nullable = false)
     private Double amount;
 
     @Column(name = "payment_date", nullable = false)

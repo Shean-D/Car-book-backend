@@ -36,7 +36,7 @@ public class BookingEntity {
     @Column(name = "end_date", nullable = false)
     private Date endDate;
 
-    @Column(name = "total_price", nullable = false, precision = 10, scale = 2)
+    @Column(name = "total_price", nullable = false)
     private Double totalPrice;
 
     @Enumerated(EnumType.STRING)

@@ -31,7 +31,7 @@ public class CarEntity {
     @Column(name = "category", nullable = false)
     private CarCategory category;
 
-    @Column(name = "daily_rate", nullable = false, precision = 10, scale = 2)
+    @Column(name = "daily_rate", nullable = false)
     private Double dailyRate;
 
     @Enumerated(EnumType.STRING)
